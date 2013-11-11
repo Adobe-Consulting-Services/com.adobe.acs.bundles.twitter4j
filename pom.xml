@@ -13,6 +13,19 @@
     <name>Twitter4J - Reactor Project</name>
     <description>Maven Multimodule project for Twitter4J.</description>
 
+    <url>https://github.com/Adobe-Consulting-Services/com.adobe.acs.bundles.twitter4j</url>
+    <inceptionYear>2013</inceptionYear>
+    <licenses>
+        <license>
+          <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+    <organization>
+      <name>Adobe</name>
+      <url>http://www.adobe.com/</url>
+    </organization>
+
     <prerequisites>
         <maven>3.0.2</maven>
     </prerequisites>
@@ -31,6 +44,8 @@
         <publish.crx.password>admin</publish.crx.password>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <license.licenseName>apache_v2</license.licenseName>
+        <license.addJavaLicenseAfterPackage>false</license.addJavaLicenseAfterPackage>
     </properties>
 
     <!--
@@ -115,9 +130,18 @@
                         </lifecycleMappingMetadata>
                     </configuration>
                 </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>license-maven-plugin</artifactId>
+                    <version>1.5</version>
+                </plugin>
             </plugins>
         </pluginManagement>
     </build>
+
+    <scm>
+          <developerConnection>scm:git:git@github.com:Adobe-Consulting-Services/com.adobe.acs.bundles.twitter4j.git</developerConnection>
+    </scm>
 
     <profiles>
         <profile>
@@ -140,6 +164,21 @@
             </build>
         </profile>
     </profiles>
+
+    <distributionManagement>
+        <repository>
+            <id>${releaseRepository-Id}</id>
+            <name>${releaseRepository-Name}</name>
+            <url>${releaseRepository-URL}</url>
+        </repository>
+        <snapshotRepository>
+            <id>${snapshotRepository-Id}</id>
+            <name>${snapshotRepository-Name}</name>
+            <url>${snapshotRepository-URL}</url>
+            <uniqueVersion>false</uniqueVersion>
+        </snapshotRepository>
+    </distributionManagement>
+
   <modules>
     <module>bundle</module>
     <module>content</module>
