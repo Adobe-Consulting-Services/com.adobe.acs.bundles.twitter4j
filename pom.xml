@@ -7,7 +7,7 @@
 
     <groupId>com.adobe.acs.bundles</groupId>
     <artifactId>com.adobe.acs.bundles.twitter4j</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>pom</packaging>
 
     <name>Twitter4J - Reactor Project</name>
@@ -123,7 +123,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore/>
+                                        <ignore />
                                     </action>
                                 </pluginExecution>
                             </pluginExecutions>
@@ -141,7 +141,8 @@
 
     <scm>
           <developerConnection>scm:git:git@github.com:Adobe-Consulting-Services/com.adobe.acs.bundles.twitter4j.git</developerConnection>
-    </scm>
+      <tag>com.adobe.acs.bundles.twitter4j-1.0.0</tag>
+  </scm>
 
     <profiles>
         <profile>
