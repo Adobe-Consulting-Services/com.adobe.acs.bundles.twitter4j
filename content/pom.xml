@@ -35,6 +35,13 @@
                     <exclude>**/.vltignore</exclude>
                 </excludes>
             </resource>
+            <resource>
+                <directory>.</directory>
+                <includes>
+                    <include>thumbnail.png</include>
+                </includes>
+                <targetPath>../vault-work/META-INF/vault/definition</targetPath>
+            </resource>            
         </resources>
 
         <plugins>
