@@ -52,7 +52,7 @@ Finally, in the `<dependencies>` section of the pom.xml for any Maven modules th
 ```
 <dependency>
     <groupId>com.adobe.acs.bundles</groupId>
-    <artifactId>com.adobe.acs.bundles.twitter4j-content</artifactId>
+    <artifactId>com.adobe.acs.bundles.twitter4j-bundle</artifactId>
     <version>1.0.0</version>
     <scope>provided</scope>
 </dependency>
