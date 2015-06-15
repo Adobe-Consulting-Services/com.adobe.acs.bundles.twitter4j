@@ -47,7 +47,7 @@ Then, (while still in the content project’s pom.xml) within the configuration 
 </plugin>
 ```
 
-Finally, in the `<dependencies>` section of the pom.xml for any Maven modules that will use Twitter APIs add the dependency for the Twitter4J bundle:
+Finally, in the `<dependencies>` section of the pom.xml for any Maven modules that will use Twitter APIs add the dependencies for the Twitter4J bundle:
 
 ```
 <dependency>
@@ -55,5 +55,11 @@ Finally, in the `<dependencies>` section of the pom.xml for any Maven modules th
     <artifactId>com.adobe.acs.bundles.twitter4j-bundle</artifactId>
     <version>1.0.0</version>
     <scope>provided</scope>
+</dependency>
+<dependency>
+	<groupId>com.adobe.acs</groupId>
+	<artifactId>acs-aem-commons-bundle-twitter</artifactId>
+	<version>1.10.2</version>
+	<scope>provided</scope>
 </dependency>
 ```
